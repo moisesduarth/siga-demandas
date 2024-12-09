@@ -1,0 +1,131 @@
+.ml-1 {
+	margin-left: 1%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #EFA3A5;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1E9420;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1E7733;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.fixa_mensagem {
+  position: absolute;
+}
+
+.bike-grid-body {
+  padding: 3px;
+  text-align: center;
+  box-shadow: -.5px -.5px 0 .5px #ccc, inset -1px -1px 0 0 #ccc !important;
+  height: 45px;
+  overflow: hidden;
+}
+
+.bike-grid-head {
+  padding: 3px;
+  text-align: center;
+  background: #000000;
+  color: #FFFFFF;
+  box-shadow: -.5px -.5px 0 .5px #ccc, inset -1px -1px 0 0 #ccc !important;
+  height: 45px;
+  line-height: 45px;
+  overflow: hidden;
+}
+
+.bike-search-form-box {
+  width:100%; float: left; border: #CCCCCC solid 1px; margin-bottom: 10px; padding-top: 10px; border-radius: 5px;
+}
+
+.bike-ball {
+	float: left;
+	margin-left: 80px;
+	background: #FFFF00;
+	border:#FF0000 solid 3px; 
+	font-size: 20px !important;
+	line-height: 40px;
+	width: 50px; 
+	height: 50px; 
+	text-align: center;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.bike-modal-md {
+	width: 400px;
+}
+
+.alert {
+  position: fixed; 
+  z-index: 1; 
+  bottom: 30px; 
+  padding-right: 10px;
+  padding-left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal-lg {
+  width: 98%;
+  height: 92%;
+  padding: 0;
+}
+
+.modal-content {
+  height: 99%;
+}
+
+.fds {
+  background: #cccccc;
+}
